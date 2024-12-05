@@ -18,7 +18,8 @@ function calculateBMI(){
         return;
     }
 
-    let BMI = (weight/((height*height)/10000)).toFixed(2);
+    // let BMI = (weight/((height*height)/10000)).toFixed(2);  2nd way just below
+    let BMI = (weight/Math.pow(height/100,2)).toFixed(2);
 
     if (BMI<18.5){
         result.innerText=`Under weight: ${BMI}`;
