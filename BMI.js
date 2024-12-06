@@ -9,11 +9,11 @@ function calculateBMI(){
     // console.log(document.querySelector("#height").value);
     // console.log(document.querySelector("#weight").value);
 
-    if(!height || isNaN(height) || height<0 ){
+    if(!height || isNaN(height) || height<=0 ){
         result.innerText="Please enter valid height";
         return;
     }
-    else if(!weight || isNaN(weight) || weight<0 ){
+    else if(!weight || isNaN(weight) || weight<=0 ){
         result.innerText="Please enter valid weight";
         return;
     }
